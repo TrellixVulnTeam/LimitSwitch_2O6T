@@ -12,6 +12,7 @@ while True:
     if not(gpio.input(24)):
         gpio.output(7,True)
         gpio.output(8,False)
+        time.sleep(2)
     elif gpio.input(24):
         gpio.output(7,False)
         gpio.output(8,True)
